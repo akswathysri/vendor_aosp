@@ -113,6 +113,12 @@ PRODUCT_COPY_FILES += \
     vendor/aosp/prebuilt/common/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so
 endif
 
+#Some prebuilt apps which are required for now
+PRODUCT_COPY_FILES += \
+    vendor/aosp/prebuilt/common/app/CHAdmin/CH_Admin.apk:system/app/CHAdmin/CH_Admin.apk
+    vendor/aosp/prebuilt/common/app/CHAttender/Chakraview_attendant.apk:system/app/CHAttender/Chakraview_attendant.apk
+    vendor/aosp/prebuilt/common/app/CHParent/CH_Parent.apk:system/app/CHParent/CH_parent.apk
+
 # by default, do not update the recovery with system updates
 PRODUCT_PROPERTY_OVERRIDES += persist.sys.recovery_update=false
 
