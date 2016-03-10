@@ -50,7 +50,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     BluetoothExt \
     Browser \
-    MusicFX \
     libemoji \
     libsepol \
     e2fsck \
@@ -86,13 +85,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Telephony packages
 PRODUCT_PACKAGES += \
-    messaging \
     CellBroadcastReceiver \
-    Stk
 
 # Mms depends on SoundRecorder for recorded audio messages
-PRODUCT_PACKAGES += \
-    SoundRecorder
+#PRODUCT_PACKAGES += \
+#    SoundRecorder
 
 # World APN list
 PRODUCT_COPY_FILES += \
