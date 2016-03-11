@@ -114,14 +114,14 @@ PRODUCT_COPY_FILES += \
 endif
 
 #Some prebuilt apps which are required for now
-PRODUCT_COPY_FILES += \
-    vendor/aosp/prebuilt/common/app/CHAdmin/CH_Admin.apk:system/app/CHAdmin/CH_Admin.apk \
-    vendor/aosp/prebuilt/common/app/CHAttender/Chakraview_attendant.apk:system/app/CHAttender/Chakraview_attendant.apk \
-    vendor/aosp/prebuilt/common/app/CHParent/CH_Parent.apk:system/app/CHParent/CH_parent.apk
+#PRODUCT_COPY_FILES += \
+#    vendor/aosp/prebuilt/common/app/CHAdmin/CH_Admin.apk:system/app/CHAdmin/CH_Admin.apk \
+#    vendor/aosp/prebuilt/common/app/CHAttender/Chakraview_attendant.apk:system/app/CHAttender/Chakraview_attendant.apk \
+#    vendor/aosp/prebuilt/common/app/CHParent/CH_Parent.apk:system/app/CHParent/CH_parent.apk
 
 # Workaround for ESFileManager zipalign fails
-PRODUCT_COPY_FILES += \
-    vendor/aosp/prebuilt/common/app/ESFileManager/ESFileManager.apk:system/app/ESFileManager/ESFileManager.apk
+#PRODUCT_COPY_FILES += \
+#    vendor/aosp/prebuilt/common/app/ESFileManager/ESFileManager.apk:system/app/ESFileManager/ESFileManager.apk
 
 # by default, do not update the recovery with system updates
 PRODUCT_PROPERTY_OVERRIDES += persist.sys.recovery_update=false
