@@ -91,6 +91,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Telephony packages
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver \
+    Dialer \
+    InCallUI
 
 # Mms depends on SoundRecorder for recorded audio messages
 PRODUCT_PACKAGES += \
